@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ThugMaker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kq7-9F-NkJ">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <fontDescription key="fontDescription" name="HoeflerText-BlackItalic" family="Hoefler Text" pointSize="25"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Thug Life" id="YYs-6b-BdW">
+                                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="1wL-MN-dz8">
+                                            <connections>
+                                                <action selector="updateImage:" destination="BYZ-38-t0r" id="hGS-JD-Uvi"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pcy-BD-800">
+                                <rect key="frame" x="-40" y="-2" width="473" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.97255545850000003" green="0.97253733870000003" blue="0.97254973649999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MkY-pk-oJE">
+                                <rect key="frame" x="128.5" y="168" width="157" height="60"/>
+                                <fontDescription key="fontDescription" name="HoeflerText-BlackItalic" family="Hoefler Text" pointSize="60"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="Gfq-3I-DyS">
+                                <rect key="frame" x="-115.5" y="272.5" width="645" height="351"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OIH-rX-SIA">
+                                        <rect key="frame" x="0.0" y="0.0" width="645" height="257"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="quakka" translatesAutoresizingMaskIntoConstraints="NO" id="ofT-Qo-yxL">
+                                                <rect key="frame" x="20" y="-1.5" width="605" height="250"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="250" id="6pw-8g-RLk"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ThugLife" translatesAutoresizingMaskIntoConstraints="NO" id="62v-cR-r68">
+                                                <rect key="frame" x="282.5" y="128.5" width="200" height="130"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="130" id="7yj-vD-mDa"/>
+                                                    <constraint firstAttribute="width" constant="200" id="xjG-GO-zA8"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sunglass" translatesAutoresizingMaskIntoConstraints="NO" id="8Gt-Jp-lEK">
+                                                <rect key="frame" x="202.5" y="43.5" width="200" height="100"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="100" id="Ucw-66-PNh"/>
+                                                    <constraint firstAttribute="width" constant="200" id="waO-2x-AGQ"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstItem="62v-cR-r68" firstAttribute="centerY" secondItem="OIH-rX-SIA" secondAttribute="centerY" constant="65" id="9yi-H1-a2W"/>
+                                            <constraint firstItem="8Gt-Jp-lEK" firstAttribute="centerY" secondItem="OIH-rX-SIA" secondAttribute="centerY" constant="-35" id="MXn-Rj-JfX"/>
+                                            <constraint firstItem="ofT-Qo-yxL" firstAttribute="centerX" secondItem="OIH-rX-SIA" secondAttribute="centerX" id="csb-qJ-K9f"/>
+                                            <constraint firstItem="62v-cR-r68" firstAttribute="centerX" secondItem="OIH-rX-SIA" secondAttribute="centerX" constant="60" id="dJg-1F-csM"/>
+                                            <constraint firstItem="ofT-Qo-yxL" firstAttribute="centerY" secondItem="OIH-rX-SIA" secondAttribute="centerY" constant="-5" id="x93-Mm-Tlf"/>
+                                            <constraint firstItem="8Gt-Jp-lEK" firstAttribute="centerX" secondItem="OIH-rX-SIA" secondAttribute="centerX" constant="-20" id="yb7-4l-ju5"/>
+                                        </constraints>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="5Yx-DY-Mv0">
+                                        <rect key="frame" x="257" y="280" width="131" height="71"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gQz-Xm-pwR">
+                                                <rect key="frame" x="43.5" y="0.0" width="44.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="HoeflerText-BlackItalic" family="Hoefler Text" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="jYG-xz-9KZ">
+                                                <rect key="frame" x="0.0" y="40" width="131" height="32"/>
+                                                <segments>
+                                                    <segment title="First"/>
+                                                    <segment title="Second"/>
+                                                </segments>
+                                                <connections>
+                                                    <action selector="controlChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="Wmr-zj-rIB"/>
+                                                </connections>
+                                            </segmentedControl>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="5Yx-DY-Mv0" firstAttribute="centerY" secondItem="Gfq-3I-DyS" secondAttribute="centerY" constant="140" id="LAm-7H-kJP"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="MkY-pk-oJE" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-250" id="T3F-bA-EO9"/>
+                            <constraint firstItem="MkY-pk-oJE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XLn-Dm-c0X"/>
+                            <constraint firstItem="Gfq-3I-DyS" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="pTP-qd-zmh"/>
+                            <constraint firstItem="Gfq-3I-DyS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rgD-Zk-hOH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="bottomCaptionLabel" destination="gQz-Xm-pwR" id="CWj-SO-txo"/>
+                        <outlet property="bottomCaptionSegmentedControl" destination="jYG-xz-9KZ" id="M3h-FL-RP9"/>
+                        <outlet property="bottomImageView" destination="62v-cR-r68" id="EPl-mp-31t"/>
+                        <outlet property="imageView" destination="ofT-Qo-yxL" id="O8v-Mj-jcd"/>
+                        <outlet property="sunglassImageView" destination="8Gt-Jp-lEK" id="xxj-5Z-pE0"/>
+                        <outlet property="topCaptionLabel" destination="MkY-pk-oJE" id="B43-mK-YEO"/>
+                        <outlet property="topImageView" destination="pcy-BD-800" id="Mam-A7-fhb"/>
+                        <outlet property="uiView" destination="8bC-Xf-vdC" id="1tT-yV-IGq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="134.78260869565219" y="115.84821428571428"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ThugLife" width="640" height="640"/>
+        <image name="quakka" width="605" height="605"/>
+        <image name="sunglass" width="960" height="640"/>
+    </resources>
+</document>
